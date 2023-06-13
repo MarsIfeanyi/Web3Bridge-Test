@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+}
+form {
+  text-align: center;
+}
+input[type="text"] {
+  padding: 5px;
+  width: 200px;
+}
+input[type="submit"] {
+  padding: 5px 10px;
+}
+ul {
+  list-style-type: none;
+}
+li.completed {
+  text-decoration: line-through;
+}
+button.delete {
+  margin-left: 10px;
+}
