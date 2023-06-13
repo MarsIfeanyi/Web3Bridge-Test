@@ -1,16 +1,17 @@
-// Function to add a task to the list
+// Function that allows user to enter or a tasks to the Task list
 function addTask(event) {
-  event.preventDefault(); // Prevent form submission
-  let taskInput = document.getElementById("taskInput");
-  let taskList = document.getElementById("taskList");
+  // Prevent form submission
+  event.preventDefault();
+  const taskInput = document.getElementById("taskInput");
+  const taskList = document.getElementById("taskList");
 
   if (taskInput.value.trim() !== "") {
-    let task = document.createElement("li");
-    let checkbox = document.createElement("input");
+    const task = document.createElement("li");
+    const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.addEventListener("change", completeTask);
 
-    let deleteButton = document.createElement("button");
+    const deleteButton = document.createElement("button");
     deleteButton.innerHTML = "Delete";
     deleteButton.className = "delete";
     deleteButton.addEventListener("click", deleteTask);
@@ -24,9 +25,9 @@ function addTask(event) {
   }
 }
 
-// Function to mark a task as completed
+// Function that allows user to mark a task as completed
 function completeTask(event) {
-  let task = event.target.parentNode;
+  const task = event.target.parentNode;
   if (event.target.checked) {
     task.className = "completed";
   } else {
@@ -34,12 +35,13 @@ function completeTask(event) {
   }
 }
 
-// Function to delete a completed task
+// Function  that allows user to delete a completed task
 function deleteTask(event) {
-  let task = event.target.parentNode;
-  let taskList = document.getElementById("taskList");
+  const task = event.target.parentNode;
+  const taskList = document.getElementById("taskList");
   taskList.removeChild(task);
 }
 
-let todoForm = document.getElementById("todoForm");
+// getting access to the form
+const todoForm = document.getElementById("todoForm");
 todoForm.addEventListener("submit", addTask);
