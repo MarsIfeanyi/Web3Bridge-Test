@@ -12,4 +12,24 @@
 ## Demo Live Link
 
 The App is hosted with vercel and available here
-Demo Link:
+Demo Link: https://web3-bridge-test.vercel.app/
+
+## Sample Output
+
+This is the simple UI of the App showing All Tasks entered by the user, Completed Task(with strike through effect) and Remaining Task (After Deleting completed Task)
+
+### All Task
+
+All Task entered by a user
+
+![AllTask](./images/AllTask.png)
+
+### Completed Task
+
+Task completed by a user
+![CompletedTask](./images/completedTask.png)
+
+### Remaining Task
+
+Remaining Task After Deleting Completed Task
+![RemainingTask](./images/RemainingTask.png)
